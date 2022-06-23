@@ -1,0 +1,41 @@
+.footer {
+    background-color: rgba(47, 48, 58, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer_container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address {
+    font-family: var(--main_font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.71;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.detai_adress {
+    color: var(--main_text_color_theme_light);
+    padding-top: 111px;
+}
+
+.address__detail {
+    margin-bottom: 9px;
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+        }
+    
+    &:last-child {
+        margin-bottom: 0;
+        }
+}
+.contact_footer {
+    margin-left: 0;
+}

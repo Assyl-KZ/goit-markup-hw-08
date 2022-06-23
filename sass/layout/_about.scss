@@ -1,0 +1,53 @@
+.hang {
+    padding-bottom: 0;
+}
+
+.hang_title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main_text_color_theme_dark);
+    margin-bottom: 10px;
+}
+
+.hang_description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary_text_color_theme-dark);
+    width: 270px;
+    height: 75px;
+}
+
+.hang_list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.hang_list__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 270px;
+}
+
+.hang_list__item_element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--hang_color);
+    border-radius: 4px;
+}
+
+.hang_list__item_element_icon {
+    display: flex;
+    background-position: center;
+}

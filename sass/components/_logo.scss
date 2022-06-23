@@ -1,0 +1,31 @@
+
+.site_nav__logo_img {
+    font-family: var(--secondary_font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 100%;
+    color: var(--main_text_color_theme_dark);
+    align-items: center;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    padding-bottom: 25px;
+    padding-top: 24px;
+}
+.logo_web {
+    color: var(--accent_color);
+}
+.logo_studio {
+    color: var(--main_text_color_theme_light);
+}
+.logo_footer {
+    font-family: var(--secondary_font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 100%;
+    color: var(--main_text_color_theme_dark);
+    align-items: center;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
