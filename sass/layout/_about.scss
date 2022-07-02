@@ -1,53 +1,77 @@
-.hang {
-    padding-bottom: 0;
+
+.about {
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
-.hang_title {
-    font-weight: 700;
+.about_list__item_element {
+    width: 100%;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.about_list__item_element_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.about_title {
     font-size: 14px;
-    line-height: 1.14;
+    font-weight: 700;
+    line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main_text_color_theme_dark);
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.hang_description {
-    font-style: normal;
-    font-weight: 400;
+.about_description {
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary_text_color_theme-dark);
-    width: 270px;
-    height: 75px;
+    color: var(--text-color-second);
 }
 
-.hang_list {
-    display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
+// @media screen and (max-width: 767px) {
+//     .about_list__item:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+// }
+
+@media screen and (min-width: 768px) {
+    .about_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    .about_list__item {
+        flex-basis: calc((100% - 60px) / 2);
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
 }
 
-.hang_list__item {
-    margin-left: 30px;
-    margin-top: 30px;
-    width: 270px;
-}
+@media screen and (min-width: 1200px) {
+    .about {
+        background-color: #ffffff;
+        padding-top: 94px;
+        padding-bottom: 0px;
+    }
 
-.hang_list__item_element {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--hang_color);
-    border-radius: 4px;
-}
+    .about_list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 
-.hang_list__item_element_icon {
-    display: flex;
-    background-position: center;
+    .about_list__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }

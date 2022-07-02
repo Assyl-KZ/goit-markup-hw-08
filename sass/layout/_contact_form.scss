@@ -93,14 +93,14 @@
 .contact_form_checkbox_label {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    
     margin-bottom: 30px;
     font-family: var(--main_font);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 14px;
+    
     color: var(--secondary_text_color_theme-dark);
 
     &::before {
@@ -159,4 +159,13 @@
     padding: 10px;
     padding-bottom: 40px;
     cursor: pointer;
+}
+
+@media screen and (min-width:1200px) {
+.contact_form_checkbox_label {
+    
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
 }
