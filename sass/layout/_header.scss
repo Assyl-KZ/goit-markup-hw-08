@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .mobile_menu__list {
     padding-bottom: 32px;
@@ -105,21 +105,20 @@
 // ____________________то что отображается на планшете___________ //
 
 @media screen and (min-width: 768px) {
-    
+    .header__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    // .header__container {
+    // padding-top: 0px;
+    // padding-bottom: 0px;
+    // }
 .mobile_menu_open_btn {
     display: none;
 }
-.site_nav_menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.site_nav_contact {
-display: block;
-}
-.header__container {
-    display: block;
-}
+
 .menu_list_item {
     font-family: var(--main_font);
     font-weight: 500;
@@ -130,7 +129,7 @@ display: block;
     padding-bottom: 32px;
     padding-top: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     &:hover,
     &:focus {
         color: var(--accent_color);
@@ -138,15 +137,15 @@ display: block;
 }
 .menu_list {
     position: relative;
-    
+
     &:not(:last-child) {
         margin-right: 50px;
         }
-    }
+}
 .current_page {
     color: var(--accent_color);
-}  
-.site_nav_menu::after {
+
+.site_nav_menu &::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -158,6 +157,25 @@ display: block;
     background-color: var(--accent_color);
     }
 }
+.site_nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.site_nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.site_nav_contact {
+display: block;
+}
+.header__container {
+    display: block;
+}
+
 .site_nav {
     display: flex;
 }
@@ -352,5 +370,6 @@ display: block;
         fill: var(--secondary_text_color_theme-dark);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+}
 }
 }

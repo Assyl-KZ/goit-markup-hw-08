@@ -1,3 +1,20 @@
+@media screen and (max-width: 1199px){
+
+.service_section {
+    display: none;
+}
+}
+@media screen and (min-width: 1200px) {
+.service_section__title {
+    font-family: var(--main_font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    etter-spacing: 0.03em;
+    padding-bottom: 50px;
+    }
 .servises__list {
     display: flex;
     margin-left: -30px;
@@ -35,4 +52,6 @@
     color: var(--main_text_color_theme_light);
     text-align: center;
     height: 70px;
+    padding-bottom: 50px;
+}
 }

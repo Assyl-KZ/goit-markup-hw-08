@@ -38,13 +38,17 @@
     color: var(--text-color-second);
 }
 
-// @media screen and (max-width: 767px) {
-//     .about_list__item:not(:last-child) {
-//         margin-bottom: 30px;
-//     }
-// }
+@media screen and (max-width: 767px) {
+    .about_list__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
 
 @media screen and (min-width: 768px) {
+
+    .about_title {
+        text-align: start;
+    }
     .about_list {
         display: flex;
         flex-wrap: wrap;

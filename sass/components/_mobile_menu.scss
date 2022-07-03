@@ -1,8 +1,6 @@
 // стили применяются на устройствах до ширины 768.
 @media screen and (max-width: 768px) {
-// .container {
-//     background-color: #FFFFFF;
-// }
+
     .mobile_menu {
     position: fixed;
     left: 0;
@@ -25,6 +23,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+    padding-right: 83px;
 }
 .mobile_menu__close_btn {
     position: absolute;
