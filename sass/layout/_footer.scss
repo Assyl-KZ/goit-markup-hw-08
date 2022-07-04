@@ -5,10 +5,16 @@
 }
 
 .footer_container {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    text-align: center;
+    justify-content: center;
 }
-
+.footer_contacts {
+    margin-bottom: 60px;
+}
+.logo_footer {
+    margin-right: 0;
+}
 .address {
     font-family: var(--main_font);
     font-weight: 400;
@@ -38,4 +44,14 @@
 }
 .contact_footer {
     margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+    .footer_container {
+        display: flex;
+        align-items: baseline;
+    }
 }

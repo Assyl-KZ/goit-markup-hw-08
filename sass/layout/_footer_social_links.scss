@@ -1,9 +1,7 @@
+
 .social_list__container {
     display: flex;
-}
-.social_list__container {
-    display: flex;
-    margin-left: 70px;
+    margin-bottom: 60px;
     flex-direction: column;
 }
 .social_list__footer_title {
@@ -15,6 +13,7 @@
     text-transform: uppercase;
     color: var(--main_text_color_theme_light);
     margin-bottom: 20px;
+   justify-content: center;
 }
 .social_link__footer {
     display: flex;
@@ -54,4 +53,18 @@
     height: 20px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--main_text_color_theme_light);
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .social_list__footer_title {
+        display: flex;
+}
+.social_list__container {
+    margin-left: 70px;
+    margin-bottom: 0;
+    display: flex;
+}
 }

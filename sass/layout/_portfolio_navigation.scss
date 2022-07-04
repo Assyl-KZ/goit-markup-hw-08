@@ -30,12 +30,19 @@
 .button_list {
     margin-top: 8px;
     margin-left: 8px;
+    
 }
 
 .button_item_list {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     justify-content: center;
     margin-left: -8px;
     margin-top: -8px;
+}
+@media screen and (min-width: 768px) {
+    .button_item_list {
+        flex-wrap: nowrap;
+    }
 }
